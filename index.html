@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dxd - example</title>
+    <meta name="description" content="dxd 세미나에서 제공하는 예제"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body id="show-aside">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<aside class="x-major">
+    <ul>
+        <li class="x-align-middle">
+            <a href="index.html#hide-aside" class="x-align-block">home</a>
+        </li>
+        <li class="x-align-middle">
+            <a href="work.html#hide-aside" class="x-align-block">work</a>
+        </li>
+        <li class="x-align-middle">
+            <a href="#hide-aside" class="x-align-block">profile</a>
+        </li>
+        <li class="x-align-middle">
+            <a href="#hide-aside" class="x-align-block">journal</a>
+        </li>
+    </ul>
+</aside>
+
+<main class="x-major">
+    <a href="#hide-aside" class="x-hide-aside"></a>
+    <!-- Lier, 2014. 6. 24. 오전 11:55
+        어플리케이에서 최상단 레벨의 네비게이션(WORK, PROFILE, JOURNAL)과 로고를 포함하고 있는 메이저 헤더입니다.
+        네비게이션이 컴퓨터와 모바일 환경에서 크게 서로다른 형태를 가지고 있으므로 초기에 분할하는 것이 옳다고 판단하여
+        x-com, x-mobile 클래스로 두 조건을 분기하여 각각 구성하였습니다.
+    -->
+    <header class="x-major x-bg-white">
+        <!-- Lier, 2014. 6. 24. 오후 12:01
+            -------------------------------
+            LOGO | WORK | PROFILE | JOURNAL
+            -------------------------------
+        -->
+        <div class="x-com">
+            <h1 class="x-logo-wrap">
+                <a href="index.html" class="x-icon x-logo ir">home</a>
+            </h1>
+            <nav>
+                <ul class="clearfix">
+                    <li class="x-align-middle">
+                        <a href="work.html" class="x-align-block">work</a>
+                    </li>
+                    <li class="x-align-middle">
+                        <a href="." class="x-align-block">profile</a>
+                    </li>
+                    <li class="x-align-middle">
+                        <a href="." class="x-align-block">journal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Lier, 2014. 6. 24. 오후 12:01
+            ------------------------
+                       LOGO
+             ------------------------
+             WORK | PROFILE | JOURNAL
+        -->
+        <div class="x-mobile">
+            <h1 class="x-logo-wrap">
+                <a href="#show-aside" class="x-icon x-logo ir"></a>
+            </h1>
+            <nav>
+                <ul class="clearfix">
+                    <li class="x-align-middle">
+                        <a href="work.html" class="x-align-block">work</a>
+                    </li>
+                    <li class="x-align-middle">
+                        <a href="." class="x-align-block">profile</a>
+                    </li>
+                    <li class="x-align-middle">
+                        <a href="." class="x-align-block">journal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="x-major">
+        <article class="x-identity x-com">
+            <img src="img/dxd_identity@2x.png" width="100%"/>
+        </article>
+        <article class="x-profile x-container x-bg-blue">
+            <header class="x-symbol">
+                <i class="x-icon"></i>
+                <h2 class="x-title">hello</h2>
+            </header>
+            <div class="x-margin">
+                <p class="x-text">
+                    My name is Lorenzo Verzini, Italian designer & art director living in London, working in the field
+                    for
+                    more than 9 years. I create digital branding experiences for small and big companies.
+                </p>
+                <p class="x-ps">
+                    PS: I am currently fully booked till the end of December - for any inquires or future collaborations
+                    get
+                    in touch at l@lorenzoverzini.com. I'd love to hear from you!
+                </p>
+            </div>
+            <footer class="x-link-wrap">
+                <a href=".">view profile</a>
+            </footer>
+        </article>
+        <article class="x-work-teaser x-container x-bg-silver">
+            <header class="x-symbol">
+                <i class="x-icon"></i>
+                <h2 class="x-title">work selection</h2>
+            </header>
+            <ul class="clearfix">
+                <li>
+                    <img src="img/work_01.jpg"/>
+                    <div class="x-info-wrap x-align-middle">
+                        <div class="x-info x-align-block">
+                            <h1>누가 내 치즈를 다 먹었을까?</h1>
+                            <div class="x-circle"></div>
+                            <p class="x-tags">아이덴티티, 초기화, 디자인</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/work_02.jpg"/>
+                    <div class="x-info-wrap x-align-middle">
+                        <div class="x-info x-align-block">
+                            <h1>누가 내 치즈를 다 먹었을까?</h1>
+                            <div class="x-circle"></div>
+                            <p class="x-tags">아이덴티티, 초기화, 디자인</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/work_03.jpg"/>
+                    <div class="x-info-wrap x-align-middle">
+                        <div class="x-info x-align-block">
+                            <h1>누가 내 치즈를 다 먹었을까?</h1>
+                            <div class="x-circle"></div>
+                            <p class="x-tags">아이덴티티, 초기화, 디자인</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/work_04.jpg"/>
+                    <div class="x-info-wrap x-align-middle">
+                        <div class="x-info x-align-block">
+                            <h1>누가 내 치즈를 다 먹었을까?</h1>
+                            <div class="x-circle"></div>
+                            <p class="x-tags">아이덴티티, 초기화, 디자인</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <footer class="x-link-wrap">
+                <a href=".">view works</a>
+            </footer>
+        </article>
+    </section>
+
+    <!-- Lier, 2014. 6. 24. 오전 11:56
+        작성자의 연락처 또는 소셜서비스 등의 정보를 담고 있는 메이저 푸터입니다.
+    -->
+    <footer class="x-major x-bg-white">
+        <div class="x-container">
+            <h2 class="x-symbol">
+                <i class="x-icon"></i>
+                <div class="x-title">get in touch</div>
+            </h2>
+            <address>
+                <ul>
+                    <li>
+                        <div>+82 (0)10 4446 3135</div>
+                        <div>dxdseminar@gmail.com</div>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/dxdseminar" target="_blank">
+                            <i class="x-icon x-twitter"></i>
+                        </a>
+                        <a href="http://instagram.com/dxd_seminar" target="_blank">
+                            <i class="x-icon x-instagram"></i>
+                        </a>
+                    </li>
+                    <li>March 2014, somewhere in <u>South Korea</u></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</main>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
