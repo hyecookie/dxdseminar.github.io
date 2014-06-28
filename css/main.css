@@ -149,6 +149,10 @@ body {
     background-color: rgba(19, 82, 162, 1);
 }
 
+.x-bg-pink {
+    background-color: rgba(255, 187, 185, 1);
+}
+
 /* 아이콘을 구성하는데 필요한 기본적인 스타일을 지정합니다. - Lier, 2014. 6. 24. 오후 12:21 */
 
 .x-icon {
@@ -255,7 +259,7 @@ header.x-major .x-mobile nav ul li a {
 }
 
 /* Lier, 2014. 6. 24. 오후 12:13 ==============================================
-   메이저 섹션 > 큐레이션
+   메이저 섹션 >> 큐레이션
    ========================================================================== */
 
 /* 섹션 내부에서 공통적으로 사용되는 요소들의 스타일을 지정합니다. - Lier, 2014. 6. 24. 오후 12:24 */
@@ -317,40 +321,40 @@ section.x-major .x-bg-blue .x-link-wrap a:hover {
 
 /* x-profile 클래스로 분기되는 article 요소와 그 하위 요소들의 스타일을 지정합니다. - Lier, 2014. 6. 24. 오후 12:24 */
 
-section.x-major article.x-profile .x-symbol .x-icon {
+section.x-major article#x-profile .x-symbol .x-icon {
     background-image: url('symbol-profile.svg');
 }
 
-section.x-major article.x-profile .x-margin {
+section.x-major article#x-profile .x-margin {
     max-width: 600px;
     margin: 0 auto;
 }
 
-section.x-major article.x-profile .x-text,
-section.x-major article.x-profile .x-ps,
+section.x-major article#x-profile .x-text,
+section.x-major article#x-profile .x-ps,
 section.x-major .x-link-wrap {
     margin-top: 40px;
 }
 
-section.x-major article.x-profile .x-text {
+section.x-major article#x-profile .x-text {
     font-size: 24px;
 }
 
-section.x-major article.x-profile .x-ps {
+section.x-major article#x-profile .x-ps {
     font-weight: 300;
 }
 
 /* x-work 클래스로 분기되는 article 요소와 그 하위 요소들의 스타일을 지정합니다. - Lier, 2014. 6. 24. 오후 12:58 */
 
-section.x-major article.x-work-teaser .x-symbol .x-icon {
+section.x-major article#x-work .x-symbol .x-icon {
     background-image: url('symbol-work.svg');
 }
 
-section.x-major article.x-work-teaser ul {
+section.x-major article#x-work ul {
     margin-top: 40px;
 }
 
-section.x-major article.x-work-teaser ul li {
+section.x-major article#x-work ul li {
     padding: 5px;
     position: relative;
     box-sizing: border-box;
@@ -359,35 +363,35 @@ section.x-major article.x-work-teaser ul li {
 /* 반응형 웹에서 이미지 사이즈가 브라우저 크기에 따라 비율에 맞춰 자유자재로 변하게 하기 위해서는 아래와 같은
    스타일 정의가 필요합니다. - Lier, 2014. 6. 23. 오후 5:26 */
 
-section.x-major article.x-work-teaser ul li img {
+section.x-major article#x-work ul li img {
     width: 100%;
     height: 100%;
 }
 
-section.x-major article.x-work-teaser ul li .x-info-wrap {
+section.x-major article#x-work ul li .x-info-wrap {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     position: absolute;
+    color: rgba(51, 51, 50, 1);
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
-    cursor: pointer;
     transition: all 0.2s linear;
 }
 
-section.x-major article.x-work-teaser ul li:hover .x-info-wrap {
+section.x-major article#x-work ul li:hover .x-info-wrap {
     opacity: 1;
     transition: all 0.2s linear;
 }
 
-section.x-major article.x-work-teaser ul li .x-info-wrap .x-info h1 {
+section.x-major article#x-work ul li .x-info-wrap .x-info h1 {
     font-size: 16px;
     font-weight: normal;
 }
 
-section.x-major article.x-work-teaser ul li .x-info-wrap .x-info .x-circle {
+section.x-major article#x-work ul li .x-info-wrap .x-info .x-circle {
     width: 8px;
     height: 8px;
     margin: 4px auto 6px auto;
@@ -395,55 +399,69 @@ section.x-major article.x-work-teaser ul li .x-info-wrap .x-info .x-circle {
     border: 3px solid rgba(51, 51, 50, 1);
 }
 
-section.x-major article.x-work-teaser ul li .x-info-wrap .x-info .x-tags {
+section.x-major article#x-work ul li .x-info-wrap .x-info .x-tags {
     font-size: 14px;
     font-weight: 300;
 }
 
-/* Lier, 2014. 6. 25. 오후 8:30 ==============================================
-   메이저 섹션 > 워크(WORK)
+/* Lier, 2014. 6. 28. 오후 6:03 ==============================================
+   메이저 섹션 >> 디테일
    ========================================================================== */
 
-section.x-major .works article.x-work {
-    height: 440px;
-    padding: 10px;
-    box-sizing: border-box;
-    /* 사물이 얼마나 멀어보이게 하는지를 결정합니다. - Lier, 2014. 6. 25. 오후 9:28 */
-    -webkit-perspective: 1400;
+section.x-major.x-work-detail > header .x-identity {
+    padding-top: 10%;
+    text-align: center;
 }
 
-section.x-major .works article.x-work .x-flip,
-section.x-major .works article.x-work .x-front,
-section.x-major .works article.x-work .x-back {
-    width: 100%;
-    height: 100%;
+section.x-major.x-work-detail header .x-identity img {
+    width: 50%;
+    max-width: 640px;
 }
 
-section.x-major .works article.x-work .x-flip {
+section.x-major.x-work-detail header dl {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.x-major.x-work-detail header dl dt {
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+section.x-major.x-work-detail header dl dd {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+section.x-major.x-work-detail article {
     position: relative;
-    transition: all 0.5s linear;
-    -webkit-transform-style: preserve-3d;
+    text-align: center;
 }
 
-section.x-major .works article.x-work:hover .x-flip {
-    -webkit-transform: rotateY(180deg);
-}
-
-section.x-major .works article.x-work .x-front,
-section.x-major .works article.x-work .x-back {
+section.x-major.x-work-detail article .x-arrow {
     top: 0;
-    left: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
     position: absolute;
-    -webkit-backface-visibility: hidden;
+    border-style: solid;
+    border-width: 12px 10px 0 10px;
+    border-color: white transparent transparent transparent;
 }
 
-section.x-major .works article.x-work .x-front {
-    background-color: red;
+section.x-major.x-work-detail article ul li {
+    padding: 40px 20px;
 }
 
-section.x-major .works article.x-work .x-back {
-    background-color: blue;
-    -webkit-transform: rotateY(180deg);
+section.x-major.x-work-detail article ul li img {
+    width: 100%;
+    max-width: 960px;
 }
 
 /* Lier, 2014. 6. 20. 오전 12:02 ==============================================
@@ -570,6 +588,7 @@ body#show-aside main.x-major .x-hide-aside {
 
 body#show-aside:target main.x-major {
     left: 70%;
+    position: fixed;
     transition: all 0.5s ease;
 }
 
@@ -692,7 +711,6 @@ body#show-aside:target main.x-major .x-hide-aside {
     /* Lier, 2014. 6. 24. 오후 1:30 ==============================================
         주요 요소들
        ========================================================================== */
-
     .x-com {
         display: block;
     }
@@ -702,30 +720,31 @@ body#show-aside:target main.x-major .x-hide-aside {
     }
 
     /* Lier, 2014. 6. 24. 오후 1:39 ==============================================
-       메이저 섹션 > 큐레이션
+       메이저 섹션 >> 큐레이션
        ========================================================================== */
-
-    section.x-major article.x-work-teaser ul {
+    section.x-major article#x-work ul {
         padding: 0 140px;
     }
 
-    section.x-major article.x-work-teaser ul li {
+    section.x-major article#x-work ul li {
         float: left;
         width: 50%;
     }
 
-    /* Lier, 2014. 6. 25. 오후 9:33 ==============================================
-       메이저 섹션 > 워크(WORK)
+    /* Lier, 2014. 6. 28. 오후 6:36 ==============================================
+       메이저 섹션 >> 디테일
        ========================================================================== */
-
-    section.x-major .works {
-        margin: 0 120px;
+    section.x-major.x-work-detail header dl {
+        width: 60%;
+        padding: 100px 0;
     }
 
-    section.x-major .works article.x-work {
-        float: left;
-        width: 50%;
-        padding: 10px;
+    section.x-major.x-work-detail header dl dt {
+        font-size: 35px;
+    }
+
+    section.x-major.x-work-detail header dl dd {
+        font-size: 18px;
     }
 }
 
