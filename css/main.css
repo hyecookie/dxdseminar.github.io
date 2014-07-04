@@ -137,7 +137,7 @@ body {
    코드 내에서 지속적으로 동일하게 나오는 스타일들은 클래스로 묶어두는 것이 편리합니다. - Lier, 2014. 6. 23. 오후 5:05 */
 
 .x-bg-white {
-    color: rgba(51, 51, 50, 1);
+    color: rgba(99, 98, 98, 1);
     background-color: white;
 }
 
@@ -217,7 +217,7 @@ header.x-major .x-logo-wrap .x-logo.x-icon {
    모르겠다면 일단 아래의 두 값을 바꿔보면서 마우스를 올렸다 내려보세요. - Lier, 2014. 6. 23. 오후 6:52 */
 
 header.x-major nav ul li a {
-    color: rgba(51, 51, 50, 1);
+    color: rgba(99, 98, 98, 1);
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: all 0.3s ease-in;
@@ -297,7 +297,7 @@ section.x-major .x-symbol .x-icon {
 
 section.x-major .x-symbol .x-title {
     font-size: 12px;
-    font-weight: normal;
+    font-weight: 700;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-top: 24px;
@@ -340,6 +340,7 @@ section.x-major article#x-profile ul.x-members li .x-appearance dt {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 section.x-major article#x-profile ul.x-members li .x-appearance dd {
@@ -354,8 +355,13 @@ section.x-major article#x-profile ul.x-members li hr {
 section.x-major article#x-profile ul.x-members li .x-about p {
     padding-bottom: 10px;
     font-weight: 300;
-    text-align: justify;
+    text-align: left;
     line-height: 150%;
+}
+
+section.x-major article#x-profile ul.x-members li .x-about p:last-child {
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 /* x-work 클래스로 분기되는 article 요소와 그 하위 요소들의 스타일을 지정합니다. - Lier, 2014. 6. 24. 오후 12:58 */
@@ -523,7 +529,7 @@ footer.x-major .x-contact .x-symbol .x-title {
 footer.x-major .x-contact .x-symbol .x-icon {
     width: 64px;
     height: 64px;
-    background-image: url('ico_contant@2x.png');
+    background-image: url('symbol-contact.svg');
 }
 
 footer.x-major .x-contact hr {
@@ -543,6 +549,7 @@ footer.x-major .x-contact dl dt {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 28px;
+    letter-spacing: 1px;
 }
 
 footer.x-major .x-contact address ul li {
@@ -590,6 +597,8 @@ footer.x-major .x-contact address ul li .x-email {
 footer.x-major .x-copyright {
     padding: 40px;
     font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
 /* Lier, 2014. 6. 24. 오후 2:30 ==============================================
