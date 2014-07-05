@@ -47,7 +47,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #ccc;
     margin: 1em 0;
     padding: 0;
 }
@@ -132,6 +132,20 @@ body {
 .x-mobile {
     display: block;
 }
+
+/* 한글과 영문이 번갈아 쓰이는 곳에서 사용할 폰트를 클래스로 정의합니다. - Jihye, 2014. 7. 5. 오후 1:17 */
+
+.x-english {
+    letter-spacing: 0;
+}
+
+.x-korean {
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
 
 /* 어플리케이션 내에서 사용되는 주요 배경 색상과 그에 걸맞는 텍스트 색상을 클래스 형태로 작성합니다. 이와같이
    코드 내에서 지속적으로 동일하게 나오는 스타일들은 클래스로 묶어두는 것이 편리합니다. - Lier, 2014. 6. 23. 오후 5:05 */
@@ -349,7 +363,7 @@ section.x-major article#x-profile ul.x-members li .x-appearance dd {
 }
 
 section.x-major article#x-profile ul.x-members li hr {
-    border-color: white;
+    border-color: #f1f1f1;
 }
 
 section.x-major article#x-profile ul.x-members li .x-about p {
@@ -454,20 +468,24 @@ section.x-major article#x-portfolio ul.x-animate-pop li:hover:last-child .x-info
    ========================================================================== */
 
 section.x-major.x-portfolio-detail header .x-identity {
-    height: 300px;
-    background-color: red;
+
+
 }
 
-section.x-major.x-portfolio-detail header dl {
-    padding: 20px;
-    margin: 0 auto;
+section.x-major.x-portfolio-detail header dt {
     text-align: center;
 }
 
+section.x-major.x-portfolio-detail header dl {
+    padding: 50px 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 section.x-major.x-portfolio-detail header dl dt {
-    padding: 0 0 10px 0;
-    font-size: 20px;
-    font-weight: 300;
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -494,8 +512,13 @@ section.x-major.x-portfolio-detail article .x-arrow {
     border-color: white transparent transparent transparent;
 }
 
+
+section.x-major.x-portfolio-detail article ul {
+    padding: 50px 0;
+}
+
 section.x-major.x-portfolio-detail article ul li {
-    padding: 40px 20px;
+    padding: 10px 0;
 }
 
 section.x-major.x-portfolio-detail article ul li img {
@@ -800,6 +823,10 @@ body#show-aside:target main.x-major .x-hide-aside {
     section.x-major article#x-portfolio ul li {
         float: left;
         width: 50%;
+    }
+
+    section.x-major.x-portfolio-detail header dl {
+        text-align: center;
     }
 }
 
