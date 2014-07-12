@@ -33,49 +33,26 @@
 <![endif]-->
 
 <aside class="x-major x-bg-white">
-    <a href="index.html"><u>go to home</u></a>
+    <a href="index.html">go to home</a>
 </aside>
 
 <main class="x-major">
-    <a href="#hide-aside" class="x-hide-aside"></a>
-    <!-- Lier, 2014. 6. 24. 오전 11:55
-        어플리케이에서 최상단 레벨의 네비게이션(WORK, PROFILE, BLOG)과 로고를 포함하고 있는 메이저 헤더입니다.
-        네비게이션이 컴퓨터와 모바일 환경에서 크게 서로다른 형태를 가지고 있으므로 초기에 분할하는 것이 옳다고 판단하여
-        x-com, x-mobile 클래스로 두 조건을 분기하여 각각 구성하였습니다.
+<a href="#hide-aside" class="x-hide-aside"></a>
+<!-- Lier, 2014. 6. 24. 오전 11:55
+    어플리케이에서 최상단 레벨의 네비게이션(PORTFOLIO, PROFILE, BLOG)과 로고를 포함하고 있는 메이저 헤더입니다.
+    네비게이션이 컴퓨터와 모바일 환경에서 크게 서로다른 형태를 가지고 있으므로 초기에 분할하는 것이 옳다고 판단하여
+    x-com, x-mobile 클래스로 두 조건을 분기하여 각각 구성하였습니다.
+-->
+<header class="x-major x-bg-white">
+    <!-- Lier, 2014. 6. 24. 오후 12:01
+        ---------------------------------
+        LOGO | PORTFOLIO | PROFILE | BLOG
+        ---------------------------------
     -->
-    <header class="x-major x-bg-white">
-        <!-- Lier, 2014. 6. 24. 오후 12:01
-            ---------------------------------
-            LOGO | PORTFOLIO | PROFILE | BLOG
-            ---------------------------------
-        -->
-        <div class="x-com">
-            <nav>
-                <h1 class="x-logo-wrap">
-                    <a href="index.html" class="x-icon x-logo ir">home</a>
-                </h1>
-                <ul class="clearfix">
-                    <li class="x-align-middle">
-                        <a href="index.html#x-portfolio" class="x-align-block">portfolio</a>
-                    </li>
-                    <li class="x-align-middle">
-                        <a href="index.html#x-profile" class="x-align-block">profile</a>
-                    </li>
-                    <li class="x-align-middle">
-                        <a href="https://www.facebook.com/dxdseminar" target="_blank" class="x-align-block">blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Lier, 2014. 6. 24. 오후 12:01
-            --------------------------
-                        LOGO
-            --------------------------
-            PORTFOLIO | PROFILE | BLOG
-        -->
-        <div class="x-mobile">
+    <div class="x-com">
+        <div class="x-container">
             <h1 class="x-logo-wrap">
-                <a href="#show-aside" class="x-icon x-logo ir"></a>
+                <a href="index.html" class="x-icon x-logo ir">dxd</a>
             </h1>
             <nav>
                 <ul class="clearfix">
@@ -86,12 +63,37 @@
                         <a href="index.html#x-profile" class="x-align-block">profile</a>
                     </li>
                     <li class="x-align-middle">
-                        <a href="https://www.facebook.com/dxdseminar" target="_blank" class="x-align-block">blog</a>
+                        <a href="http://blog.dxdseminar.com" target="_blank" class="x-align-block">blog</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
+    <!-- Lier, 2014. 6. 24. 오후 12:01
+        ---------------------------
+                    LOGO
+         --------------------------
+         PORTFOLIO | PROFILE | BLOG
+    -->
+    <div class="x-mobile">
+        <h1 class="x-logo-wrap">
+            <a href="#show-aside" class="x-icon x-logo ir">dxd</a>
+        </h1>
+        <nav>
+            <ul class="clearfix">
+                <li class="x-align-middle">
+                    <a href="index.html#x-portfolio" class="x-align-block">portfolio</a>
+                </li>
+                <li class="x-align-middle">
+                    <a href="index.html#x-profile" class="x-align-block">profile</a>
+                </li>
+                <li class="x-align-middle">
+                    <a href="https://www.facebook.com/dxdseminar" target="_blank" class="x-align-block">blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <section class="x-major">
     <article class="x-identity x-com">
@@ -275,10 +277,11 @@
         </address>
     </div>
     <div class="x-copyright x-bg-gray">
-        COPYRIGHT © 2014 DXD SEMINAR ALL RIGHTS RESERVED.
+        copyright © 2014 dxd seminar all rights reserved.
     </div>
 </footer>
 </main>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
